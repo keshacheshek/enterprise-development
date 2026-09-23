@@ -1,17 +1,19 @@
-﻿namespace FitnessGym.Domain.Entities;
+﻿using FitnessGym.Domain.Enums;
+
+namespace FitnessGym.Domain.Entities;
 
 /// <summary>
-/// Специализация тренера
+/// Справочная сущность, описывающая направление подготовки тренера
 /// </summary>
-public class Specialization
+public sealed class Specialization
 {
     /// <summary>
-    /// Уникальный идентификатор
+    /// Уникальный идентификатор специализации
     /// </summary>
     public int Id { get; set; }
 
     /// <summary>
-    /// Название
+    /// Тип специализации
     /// </summary>
-    public required string Name { get; set; }
+    public required SpecializationName Name { get; set; }
 }

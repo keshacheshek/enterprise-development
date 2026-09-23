@@ -8,7 +8,7 @@ public class Client : Person
     /// <summary>
     /// Номер телефона
     /// </summary>
-    public required string PhoneNumber { get; set; }
+    public required string Phone { get; set; }
 
     /// <summary>
     /// Дата начала абонемента
