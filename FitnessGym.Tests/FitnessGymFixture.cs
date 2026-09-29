@@ -43,7 +43,7 @@ public class FitnessGymFixture
     /// </summary>
     public FitnessGymFixture()
     {
-        Now = DateTime.Now;
+        Now = new DateTime(2026, 5, 15, 12, 0, 0, DateTimeKind.Utc);
         Today = DateOnly.FromDateTime(Now);
 
         Specializations = BuildSpecializations();
