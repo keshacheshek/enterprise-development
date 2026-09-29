@@ -1,5 +1,4 @@
 name: Tests
-
 on:
   push:
     branches: [ main, lab1 ]
@@ -15,9 +14,9 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 10.0.x
-      - name: Restore dependencies
+      - name: Restore
         run: dotnet restore
       - name: Build
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build --no-restore
       - name: Test
-        run: dotnet test --no-build --configuration Release --verbosity normal
+        run: dotnet test --no-build --verbosity normal
