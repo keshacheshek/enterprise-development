@@ -15,5 +15,5 @@ public sealed class Specialization
     /// <summary>
     /// Тип специализации
     /// </summary>
-    public required SpecializationName Name { get; set; }
+    public required string Name { get; set; }
 }
